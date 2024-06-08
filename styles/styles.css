@@ -1,0 +1,89 @@
+/* --------------- General --------------- */
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #c06d0f;
+    --dark-accent-color: #795548;
+    --light-accent-color: #EFEFFF;
+
+    --nav-height: 150px;
+
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--light-accent-color);
+}
+
+
+/* --------------- Header --------------- */
+
+#logo {
+    height: 100%;
+}
+
+nav {
+    height: var(--nav-height);
+    width: 100%;
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%; height: 100%;
+    padding: 0; margin: 0;
+}
+
+nav li {
+    width: 100%; height: 100%;
+    text-align: center;
+    overflow: none;
+}
+
+nav li:hover {
+    background-color: var(--dark-accent-color);
+}
+
+nav li > a {
+    font-size: 1.4rem;
+    line-height: var(--nav-height);
+    text-decoration: none;
+    color: var(--light-accent-color);
+}
+
+
+/* --------------- Main --------------- */
+
+
+
+
+
+/* --------------- Footer --------------- */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-accent-color);
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin: 30px;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--light-accent-color);
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
