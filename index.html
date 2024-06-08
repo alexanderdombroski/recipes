@@ -10,6 +10,8 @@
     <link rel="icon" sizes="64x64" href="images/cookie-logo-64.png" type="image/png">
 
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="" defer></script>
+    <script src="" defer></script>
 </head>
 <body>
     <header>
@@ -17,16 +19,177 @@
             <a href="index.html"><img id="logo" src="images/recipe-logo.png" alt="logo"></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="https://github.com/alexanderdombroski/recipes">GitHub Source</a></li>
                 <li><a href="wireframe.html">Wireframe</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        
+        <section class="filters-section">
+            <h1>Filters</h1>
+            <label for="query">Recipe Name:</label>
+            <input type="text" name="query" id="query" placeholder="brownies">
+            <label for="meal-type">Meal of the Day:</label>
+            <input list="meal-list" id="meal-type" name="meal-type" type="search" placeholder="snack">
+            <datalist id="meal-list">
+                <option value="breakfast"></option>
+                <option value="brunch"></option>
+                <option value="lunch/dinner"></option>
+                <option value="snack"></option>
+                <option value="teatime"></option>
+            </datalist>
+            <label for="cuisine-type">Cuisine Type:</label>
+            <input list="cuisine-types" id="cuisine-type" name="cuisine-type" type="search" placeholder="Mexican">
+            <datalist id="cuisine-types">
+                <option value="American"></option>
+                <option value="Asian"></option>
+                <option value="British"></option>
+                <option value="Caribbean"></option>
+                <option value="Central Europe"></option>
+                <option value="Chinese"></option>
+                <option value="Eastern Europe"></option>
+                <option value="French"></option>
+                <option value="Greek"></option>
+                <option value="Indian"></option>
+                <option value="Italian"></option>
+                <option value="Japanese"></option>
+                <option value="Korean"></option>
+                <option value="Kosher"></option>
+                <option value="Mediterranean"></option>
+                <option value="Mexican"></option>
+                <option value="Middle Eastern"></option>
+                <option value="Nordic"></option>
+                <option value="South American"></option>
+                <option value="South East Asian"></option>
+                <option value="World"></option>
+            </datalist>
+            <label for="dish-type">Dish Type:</label>
+            <input list="dish-types" id="dish-type" name="dish-type" type="search" placeholder="Sweets">
+            <datalist id="dish-types">
+                <option value="Alcohol Cocktail"></option>
+                <option value="Biscuits and Cookies"></option>
+                <option value="Bread"></option>
+                <option value="Cereals"></option>
+                <option value="Condiments and Sauces"></option>
+                <option value="Desserts"></option>
+                <option value="Drinks"></option>
+                <option value="Egg"></option>
+                <option value="Ice Cream and Custard"></option>
+                <option value="Main Course"></option>
+                <option value="Pancake"></option>
+                <option value="Pasta"></option>
+                <option value="Pastry"></option>
+                <option value="Pies and Tarts"></option>
+                <option value="Pizza"></option>
+                <option value="Preps"></option>
+                <option value="Preserve"></option>
+                <option value="Salad"></option>
+                <option value="Sandwiches"></option>
+                <option value="Seafood"></option>
+                <option value="Side Dish"></option>
+                <option value="Soup"></option>
+                <option value="Special Occasions"></option>
+                <option value="Starter"></option>
+                <option value="Sweets"></option>
+            </datalist>
+            <label for="health">Allergies:</label>
+            <input list="health-options" id="health" name="health" type="search" placeholder="gluten-free">
+            <datalist id="health-options">
+                <option value="alcohol-free"></option>
+                <option value="celery-free"></option>
+                <option value="crustacean-free"></option>
+                <option value="dairy-free"></option>
+                <option value="DASH"></option>
+                <option value="egg-free"></option>
+                <option value="fish-free"></option>
+                <option value="fodmap-free"></option>
+                <option value="gluten-free"></option>
+                <option value="immuno-supportive"></option>
+                <option value="keto-friendly"></option>
+                <option value="kidney-friendly"></option>
+                <option value="kosher"></option>
+                <option value="low-potassium"></option>
+                <option value="low-sugar"></option>
+                <option value="lupine-free"></option>
+                <option value="Mediterranean"></option>
+                <option value="mollusk-free"></option>
+                <option value="mustard-free"></option>
+                <option value="no-oil-added"></option>
+                <option value="paleo"></option>
+                <option value="peanut-free"></option>
+                <option value="pescatarian"></option>
+                <option value="pork-free"></option>
+                <option value="red-meat-free"></option>
+                <option value="sesame-free"></option>
+                <option value="shellfish-free"></option>
+                <option value="soy-free"></option>
+                <option value="sugar-conscious"></option>
+                <option value="sulfite-free"></option>
+                <option value="tree-nut-free"></option>
+                <option value="vegan"></option>
+                <option value="vegetarian"></option>
+                <option value="wheat-free"></option>
+            </datalist>
+            <button id="search">Search</button>
+        </section>
+        <section class="recipes">
+            <h1>Recipes</h1>
+            <div class="recipes-grid">
+                <article>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="randomly generated 200px picture">
+                    </figure>
+                    <figcaption>Recipe</figcaption>
+                </article>
+                <article class="expanded">
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="randomly generated 200px picture">
+                    </figure>
+                    <figcaption>Recipe</figcaption>
+                    <div>
+                        
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="randomly generated 200px picture">
+                    </figure>
+                    <figcaption>Recipe</figcaption>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="randomly generated 200px picture">
+                    </figure>
+                    <figcaption>Recipe</figcaption>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="randomly generated 200px picture">
+                    </figure>
+                    <figcaption>Recipe</figcaption>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="randomly generated 200px picture">
+                    </figure>
+                    <figcaption>Recipe</figcaption>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://picsum.photos/200" alt="randomly generated 200px picture">
+                    </figure>
+                    <figcaption>Recipe</figcaption>
+                </article>
+                
+
+            </div>
+
+
+            
+        </section>
     </main>
     <footer>
-        <p>Website made my Alex Dombroski. All recipes imported using the <a href="https://www.edamam.com/" target="_blank">Edamam</a> recipe API</p>
+        <p>Website made my Alex Dombroski. Recipes from <a href="https://www.edamam.com/" target="_blank">Edamam</a> recipe API</p>
+        <a href="https://github.com/alexanderdombroski/recipes">GitHub</a>
     </footer>
 </body>
 </html>

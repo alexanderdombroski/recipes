@@ -58,26 +58,100 @@ nav li > a {
 
 /* --------------- Main --------------- */
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 100px;
+}
 
+main h1 {
+    margin: 0 auto;
+    text-align: center;
+}
 
+main section {
+    padding: 30px;
+}
 
+/* ----- Filters ----- */
+
+.filters-section {
+    min-width: 120px;
+}
+
+.filters-section label {
+    display: block;
+    margin-top: 25px;
+}
+
+.filters-section input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#search {
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* ----- Recipes ----- */
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: var(--primary-color) solid 4px;
+    background-color: var(--primary-color);
+}
+
+.recipes article {
+    margin: 0;
+    border: var(--primary-color) solid 4px;
+    background-color: var(--primary-color);
+    color: var(--light-accent-color);
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.expanded {
+    grid-row: span 2;
+}
+
+article div {
+    display: none;
+}
+
+.expanded div {
+    display: block;
+}
 
 /* --------------- Footer --------------- */
 
 footer {
     background-color: var(--secondary-color);
     color: var(--light-accent-color);
-    height: var(--nav-height);
+    height: calc(var(--nav-height) / 2);
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
 footer p {
-    margin: 30px;
     font-size: 1.2rem;
 }
 
 footer a {
+    font-size: 1.2rem;
     color: var(--primary-color);
     text-decoration: none;
 }
@@ -85,5 +159,13 @@ footer a {
 footer a:hover {
     color: var(--light-accent-color);
     text-decoration: underline;
-    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        display: block;
+    }
+    .filters-section label {
+        margin-top: 10px;
+    }
 }
