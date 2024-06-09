@@ -5,7 +5,6 @@ node_modules/
 /dist/
 
 # Ignore TypeScript build output
-*.js
 *.js.map
 
 # Ignore editor-specific files
