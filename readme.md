@@ -4,7 +4,11 @@ I've made good progress learning JavaScript and I created this project to take s
 
 This program grabs data from a recipe API and fills it in the page. This was a great oppourtuinity to learn more about asyncrounous functions and try/except.
 
-[Software Demo Video](http://youtube.link.goes.here)
+I'm using a free API that only allows 1000 requests per month and 10 per minute. If the images aren't pulling up, that's probably why.
+
+Here is the [website](https://alexanderdombroski.github.io/recipes/)!
+
+[Software Demo Video](https://youtu.be/STpxrHjpa7c)
 
 # Development Environment
 
