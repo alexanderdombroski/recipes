@@ -89,23 +89,27 @@ main section {
     box-sizing: border-box;
 }
 
-#search {
+#search, #clear {
     margin-top: 25px;
     width: 100%;
 }
 
 /* ----- Recipes ----- */
 
+.recipes-section h1 {
+    margin-bottom: 30px;
+}
+
 .recipes-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: var(--primary-color) solid 4px;
+    border: var(--primary-color) solid 16px;
     background-color: var(--primary-color);
 }
 
-.recipes article {
+article {
     margin: 0;
-    border: var(--primary-color) solid 4px;
+    border: var(--primary-color) solid 8px;
     background-color: var(--primary-color);
     color: var(--light-accent-color);
 }
@@ -132,6 +136,33 @@ article div {
 
 .expanded div {
     display: block;
+}
+
+/* ----- Recipe Details ----- */
+
+.expanded p {
+    text-align: center;
+}
+
+.expanded a {
+    color: var(--light-accent-color);
+}
+
+.expanded a:hover {
+    color: var(--secondary-color);
+}
+
+/* ----- Buttons ----- */
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;    
+}
+
+#next, #prev {
+    height: 30px;
+    width: 60px;
 }
 
 /* --------------- Footer --------------- */
@@ -162,10 +193,30 @@ footer a:hover {
 }
 
 @media screen and (max-width: 700px) {
+    /* -- MOBILE -- */
     main {
         display: block;
+        margin-bottom: 0;
     }
     .filters-section label {
         margin-top: 10px;
+    }
+    .recipes-section {
+        padding: 0;
+        padding-top: 20px;
+        background-color: var(--primary-color);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /* -- BIG -- */
+    .recipes-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1400px) {
+    /* -- HUGE -- */
+    .recipes-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
